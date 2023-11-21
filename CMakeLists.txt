@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.26)
+project(rgr C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(rgr rgr.c)
+
+target_link_libraries(rgr -lOpenGL32 -lfreeGLUT -lglu32)
